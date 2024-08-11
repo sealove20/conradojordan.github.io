@@ -4,6 +4,10 @@
 	--button-hover-color: #b5cf57;
 	--button-border-color: #664e4c;
 	--button-text-color: #000;
+	--spacing-x-small: 4px;
+	--spacing-small: 8px;
+	--spacing-medium: 16px;
+	--spacing-large: 32px;
 }
   
 html {
