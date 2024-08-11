@@ -1,0 +1,33 @@
+.choose-enemies {
+	margin: var(--spacing-medium) 0;
+}
+
+.hunt__enemy--name {
+	display: none;
+}
+
+.hunt_enenemy--health {
+	display: none;
+}
+
+.hunt__run-away-button {
+	display: none;
+}
+
+.hunt__battle-log {
+	display: none;
+	margin-top: 20px;
+	padding: 5px;
+	border: 1px solid rgb(255, 83, 83);
+}
+
+.hunt__battle-log-title {
+	color: rgb(148, 82, 38);
+	font-weight: bold;
+	margin: 3px;
+}
+
+.hunt__battle-log-list {
+	list-style-type: none;
+	padding: 0;
+}

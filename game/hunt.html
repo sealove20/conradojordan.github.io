@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hunt</title>
+	<link rel="stylesheet" href="css/game-style.css" />
+	<link rel="stylesheet" href="css/hunt.css" />
+</head>
+<body>
+	<h1 style="display: inline">Conrado's Game</h1>
+    <small style="display: inline">(v 0.4.0)</small>
+	<div class="choose-enemies">
+		<label for="choose-enemies">Choose enemy: </label>
+		<select name="chooseEnemies" id="choose-enemies"></select>
+	</div>
+	<div class="hunt__arena">
+		<h3 class="hunt__player-name-and-level"></h3>
+		<span class="hunt__player-exp-label"></span>
+		<progress class="hunt__player-exp-bar" value="40" max="100"></progress>
+		<p class="hunt__player-exp-to-next-level"></p>
+		<div class="hunt__character-info gray-border">
+			<h3 class="hunt__character-info-title">Character Information</h3>
+			<p class="hunt__character-info-health"></p>
+			<p class="hunt__character-info-strength"></p>
+			<p class="hunt__character-info-intelligence"></p>
+			<p class="hunt__character-info-music-taste">🎤 Music taste: bad</p>
+		</div>
+		<button class="link__button-styled hunt__run-away-button"();">🏃 Run away</button>
+		<h2 class="hunt__enemy--name"></h2>
+		<p class="hunt_enenemy--health"></p>
+		<div class="hunt__battle-log">
+			<h3 class="hunt__battle-log-title">Battle logs 🕘</h3>
+			<ul class="hunt__battle-log-list"></ul>
+		</div>
+	</div>
+	<div>
+		<button class="link__button-styled hunt__start-battle-button">⚔️ Battle!</button>
+		<a
+			id="return-to-town-button"
+			href="index.html"
+			class="link__button-styled hunt_return-to-town-button"
+		>
+			🏘️ Return to town
+		</a>
+	</div>
+
+	<script src="js/enemies.js"></script>
+	<script src="js/persistence.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/exp_table.js"></script>
+	<script src="js/items.js"></script>
+	<script src="js/hunt.js" type="module"></script>
+</body>
+</html>
