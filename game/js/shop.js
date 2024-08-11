@@ -1,4 +1,4 @@
-import {addToBackpack, showCharacterBackpack, removeFromBackpack} from './backpack.js'
+import { addToBackpack, showCharacterBackpack, removeFromBackpack } from './backpack.js'
 
 let character;
 

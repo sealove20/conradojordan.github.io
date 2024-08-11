@@ -123,19 +123,20 @@ function showBattleButton() {
 }
 
 function startBattle(sameEnemy = false) {
-    battleLogs = [];
+	battleLogs = [];
     currentBattleClock = 0;
     let battleStarted = document.createElement("p");
     battleStarted.innerText = "The battle has started!";
     battleLogs.push(battleStarted);
-
+	
     if (!sameEnemy) {
-        let chooseEnemies = document.getElementById("choose-enemies");
+		let chooseEnemies = document.getElementById("choose-enemies");
         let chosenEnemyId = chooseEnemies.value;
         let enemy = all_enemies.filter((en) => en.id == chosenEnemyId)[0];
         // Clone enemy and set as currentEnemy (global variable)
         currentEnemy = JSON.parse(JSON.stringify(enemy));
     }
+	console.log(currentEnemy);
 
     currentEnemy.currentHealth = currentEnemy.maxHealth;
     battleTurn();
