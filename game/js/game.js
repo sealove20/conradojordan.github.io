@@ -734,6 +734,13 @@ function showHuntShopAndHealButtons() {
     goHuntButton.setAttribute("class", "link__button-styled");
     buttonsContainer.appendChild(goHuntButton);
 
+    let newGoHuntButton = document.createElement("a");
+    newGoHuntButton.innerText = "🏹 new Go Hunt!";
+    newGoHuntButton.id = "hunt-button";
+    newGoHuntButton.setAttribute("href", "hunt.html");
+    newGoHuntButton.setAttribute("class", "link__button-styled");
+    buttonsContainer.appendChild(newGoHuntButton);
+
     let shopButton = document.createElement("a");
     shopButton.innerText = "🛒 Shop";
     shopButton.id = "shop-button";
